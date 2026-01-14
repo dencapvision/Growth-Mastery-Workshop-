@@ -1,20 +1,27 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
 
-# Run and deploy your AI Studio app
+# Growth Mastery Workshop Application
 
-This contains everything you need to run your app locally.
+แอปพลิเคชันสำหรับจัดทำ Workshop (Wheel of Life & IDP Roadmap) พร้อมระบบ AI ช่วยแนะนำแผนการเติบโต
 
-View your app in AI Studio: https://ai.studio/apps/drive/1-vaCv8jJieUPCpyjMHX_vwoTtkLJBXrj
+## การติดตั้ง (Installation)
 
-## Run Locally
+1. ติดตั้ง dependencies:
+   ```bash
+   npm install
+   ```
 
-**Prerequisites:**  Node.js
+2. สร้างไฟล์ `.env` แล้วเพิ่ม API Key ของคุณ:
+   ```env
+   VITE_API_KEY=your_gemini_api_key_here
+   ```
 
+3. เริ่มรันโปรเจกต์:
+   ```bash
+   npm run dev
+   ```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## ฟีเจอร์หลัก
+- **Wheel of Life**: ประเมินความพึงพอใจใน 8 ด้านของชีวิต
+- **Growth Roadmap**: วางแผน IDP (90 Days Goal)
+- **AI Support**: ใช้ Gemini AI ช่วยออกแบบ Action Steps ที่ทำได้จริง
+- **PDF Export**: สั่งพิมพ์หรือบันทึกเป็น PDF ขนาด A4 ได้ทันที
